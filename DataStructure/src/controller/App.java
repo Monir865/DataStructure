@@ -3,19 +3,33 @@
  */
 package controller;
 
-import dataStructure.MyLinkedList;
+import dataStructure.Stack;
 
 public class App {
 	public static void main(String [] args) {
 			
-		MyLinkedList list = new MyLinkedList();
-		list.add(10);
-		list.add(20);
-		list.removeFirstElement();
-		list.add(30);
+		Stack s =  new Stack(); 
+		s.push(10);
+		s.push(20);
+		s.push(30);
 		
-
-		list.show();
-			
+		s.print();
+		System.out.println(s.getSize());
+		
+		s.pop();
+		s.print();
+		System.out.println(s.getSize());
+		
+		s.push(40);
+		s.push(50);
+		s.print();
+		System.out.println(s.getSize());
+		
+		s.pop();
+		s.print();
+		System.out.println(s.getSize());
+		
+		
+		
 	}
 }
