@@ -1,0 +1,13 @@
+list.add(10);
+list.addToFirst(10);
+list.addToPosition(20, 2);
+
+list.removeFirstElement();
+list.removeLastElement();
+list.removeToPosition(2);
+list.removeAll();
+
+list.reverse();
+
+list.show();
+list.size();
